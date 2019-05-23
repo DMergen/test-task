@@ -299,9 +299,3 @@ header .header_block .to_form p {
 .about_you form button:hover {
 	background-color: #e6e6e6;
 }
-
-@media screen and (max-width: 1000px) {
-	.wedo .wedo_block .wedo_item {
-		display: block;
-	}
-}
