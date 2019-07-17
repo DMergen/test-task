@@ -3,8 +3,14 @@ body {
 	font-family: 'DIN Pro', sans-serif;
 }
 
-h1, h3, p {
+h1, h2, h3, p {
 	margin: 0;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .plus {
@@ -125,7 +131,7 @@ header .header_block .to_form p {
 	text-align: left;
 }
 
-.similar .similar_block h1 {
+.similar .similar_block h2 {
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 60px;
@@ -144,7 +150,7 @@ header .header_block .to_form p {
 	padding: 120px 0 160px;
 }
 
-.advant h1 {
+.advant h2 {
 	font-size: 40px;
 	line-height: 50px;
 	font-weight: 400;
@@ -193,7 +199,7 @@ header .header_block .to_form p {
 	padding: 100px 0 120px;
 }
 
-.about_you h1 {
+.about_you h2 {
 	font-size: 40px;
 	line-height: 52px;
 	font-weight: 400;
@@ -233,7 +239,7 @@ header .header_block .to_form p {
 	color: #fff;
 }
 
-.about_you form .form_block input {
+.about_you form .form_block input, .about_you form .form_block textarea {
 	width: 100%;
 	height: 35px;
 	margin-top: 25px;
@@ -246,6 +252,10 @@ header .header_block .to_form p {
 	letter-spacing: -0.01em;
 	color: #FFFFFF;
 	opacity: 0.3;
+}
+
+.about_you form .form_block textarea {
+	height: 70px;
 }
 
 .about_you form .form_block input::-webkit-input-placeholder {
@@ -298,4 +308,115 @@ header .header_block .to_form p {
 
 .about_you form button:hover {
 	background-color: #e6e6e6;
+}
+
+@media screen and (max-width: 1024px) {
+	.advant .advant_block {
+    	max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.wedo .wedo_block .wedo_item {
+		display: block;
+	}
+
+	.wedo {
+	    height: 880px;
+	}
+
+	.similar .similar_block {
+    	max-width: 90%;
+    }
+
+    .advant .advant_block .advant_item:nth-child(2) {
+	    margin: 0px 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2 {
+    	padding: 0 10px;
+    }
+
+	header .header_block {
+	    width: 90%;
+	}
+
+	header .header_block h1 {
+	    font-size: 37px;
+	    line-height: 43px;
+	}
+
+	header .header_block p {
+    	font: normal 21px/26px Roboto;
+    }
+
+	.advant {
+		padding-bottom: 120px;
+	}
+
+	.advant .advant_block {
+	    display: block;
+	}
+
+	.advant .advant_block .advant_item {
+	    text-align: center;
+	}
+
+	.advant .advant_block .advant_item h3:after {
+	    margin: 22px auto 0;
+	}
+
+	.advant .advant_block .advant_item:nth-child(2) {
+	    margin: 65px 0;
+	}
+
+	.wedo .wedo_block {
+	    max-width: 90%;
+	}
+
+	.wedo .wedo_block .wedo_item {
+	    width: 100%;
+	    padding: 50px 30px;
+    	height: auto;
+	}
+
+	.wedo .wedo_block .wedo_item h3 {
+	    font-size: 20px;
+	}
+
+	.similar .similar_block {
+	    text-align: center;
+	}
+
+	.about_you form {
+    	max-width: 90%;
+    }
+
+    .about_you form .form_block {
+    	padding-top: 0;
+    }
+
+	.about_you form button {
+    	margin: 60px auto;
+    	display: block;
+    	font: bold 20px/23px Gilroy;
+    }
+
+    .about_you form .form_block p {
+    	font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+	.wedo {
+	    height: 990px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.wedo {
+	    height: 1100px;
+	}
 }
